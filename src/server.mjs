@@ -4,7 +4,7 @@ import fs from 'fs';
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
     // Lee el contenido del archivo HTML
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('../index.html', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.end('Error interno del servidor');
