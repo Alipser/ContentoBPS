@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Alipser/ContentoBPS/issues"
   },
-  "homepage": "https://github.com/Alipser/ContentoBPS#readme"
+  "homepage": "https://github.com/Alipser/ContentoBPS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
