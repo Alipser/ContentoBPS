@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('/home/riwip3o-023/Documents/RIWI ROMARIO JULIO/PT/ContentoBPS'));
+app.use(express.static('./'));
 
 app.get('/', (req, res) => {        //get requests to the root ("/") will route here
-  res.sendFile('index.html', { root: '/home/riwip3o-023/Documents/RIWI ROMARIO JULIO/PT/ContentoBPS' });      //server responds by sending the index.html file to the client's browser
+  res.sendFile('index.html', { root: './' });      //server responds by sending the index.html file to the client's browser
 
 });
 const newport = 5000;
